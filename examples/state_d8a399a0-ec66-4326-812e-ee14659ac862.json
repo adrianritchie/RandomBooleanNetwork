@@ -1,0 +1,225 @@
+{
+  "StateId": "d8a399a0-ec66-4326-812e-ee14659ac862",
+  "MatrixState": {
+    "Matrix": {
+      "False-False-False-False": false,
+      "True-False-False-False": false,
+      "False-True-False-False": false,
+      "True-True-False-False": false,
+      "False-False-True-False": true,
+      "True-False-True-False": true,
+      "False-True-True-False": true,
+      "True-True-True-False": false,
+      "False-False-False-True": true,
+      "True-False-False-True": true,
+      "False-True-False-True": true,
+      "True-True-False-True": false,
+      "False-False-True-True": true,
+      "True-False-True-True": false,
+      "False-True-True-True": false,
+      "True-True-True-True": false
+    }
+  },
+  "NodeStates": [
+    {
+      "Label": 0,
+      "LinkLabels": [
+        2,
+        10,
+        12,
+        11
+      ],
+      "State": false
+    },
+    {
+      "Label": 1,
+      "LinkLabels": [
+        10,
+        6,
+        3,
+        4
+      ],
+      "State": true
+    },
+    {
+      "Label": 2,
+      "LinkLabels": [
+        11,
+        17,
+        19,
+        16
+      ],
+      "State": false
+    },
+    {
+      "Label": 3,
+      "LinkLabels": [
+        11,
+        18,
+        12,
+        19
+      ],
+      "State": true
+    },
+    {
+      "Label": 4,
+      "LinkLabels": [
+        14,
+        9,
+        2,
+        12
+      ],
+      "State": true
+    },
+    {
+      "Label": 5,
+      "LinkLabels": [
+        15,
+        13,
+        6,
+        12
+      ],
+      "State": true
+    },
+    {
+      "Label": 6,
+      "LinkLabels": [
+        11,
+        9,
+        4,
+        1
+      ],
+      "State": false
+    },
+    {
+      "Label": 7,
+      "LinkLabels": [
+        16,
+        3,
+        12,
+        9
+      ],
+      "State": false
+    },
+    {
+      "Label": 8,
+      "LinkLabels": [
+        2,
+        9,
+        0,
+        1
+      ],
+      "State": true
+    },
+    {
+      "Label": 9,
+      "LinkLabels": [
+        0,
+        2,
+        17,
+        5
+      ],
+      "State": false
+    },
+    {
+      "Label": 10,
+      "LinkLabels": [
+        3,
+        6,
+        7,
+        8
+      ],
+      "State": false
+    },
+    {
+      "Label": 11,
+      "LinkLabels": [
+        13,
+        3,
+        7,
+        0
+      ],
+      "State": false
+    },
+    {
+      "Label": 12,
+      "LinkLabels": [
+        17,
+        11,
+        16,
+        8
+      ],
+      "State": false
+    },
+    {
+      "Label": 13,
+      "LinkLabels": [
+        10,
+        9,
+        19,
+        18
+      ],
+      "State": false
+    },
+    {
+      "Label": 14,
+      "LinkLabels": [
+        0,
+        19,
+        3,
+        7
+      ],
+      "State": false
+    },
+    {
+      "Label": 15,
+      "LinkLabels": [
+        17,
+        5,
+        13,
+        7
+      ],
+      "State": true
+    },
+    {
+      "Label": 16,
+      "LinkLabels": [
+        14,
+        8,
+        13,
+        15
+      ],
+      "State": true
+    },
+    {
+      "Label": 17,
+      "LinkLabels": [
+        2,
+        15,
+        13,
+        19
+      ],
+      "State": false
+    },
+    {
+      "Label": 18,
+      "LinkLabels": [
+        2,
+        8,
+        6,
+        9
+      ],
+      "State": false
+    },
+    {
+      "Label": 19,
+      "LinkLabels": [
+        18,
+        11,
+        16,
+        10
+      ],
+      "State": false
+    }
+  ]
+}
