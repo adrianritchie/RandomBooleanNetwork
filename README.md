@@ -4,7 +4,10 @@ This project was inspired by the Computerphile video: Random Boolean Networks.
 
 ## Building the app
 
-The app is written in C# .Net Core 3.1.  
+The app is written in C# .Net Core 3.1.  The Project can be built with:
+```
+dotnet build
+```
 
 ## Running the app
 
