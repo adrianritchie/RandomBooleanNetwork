@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using RandomBooleanNetwork.Matrix;
 using RandomBooleanNetwork.Nodes;
+using System.CommandLine.Invocation;
 
 namespace RandomBooleanNetwork
 {
@@ -22,6 +23,7 @@ namespace RandomBooleanNetwork
             GenerationMatrix matrix;
             Guid systemStateId;
             var nodeLinker = new NodeLinker();
+            var outputRenderer = new OutputRenderer();
 
             if (stateFile == null || !stateFile.Exists) {
                 var nodeLabels = Enumerable.Range(0, nodes).ToList();
@@ -52,16 +54,18 @@ namespace RandomBooleanNetwork
             nodeLinker.Link(networkNodes);
             var nodeIterator = new NodeIterator(networkNodes);
 
+            List<string> output = new List<string>();
             for (int i = 0; i < generations; i++)
             {
                 var states = new List<string>();
                 nodeIterator.Execute(n => states.Add(n.ToString()));
-                Console.WriteLine($"{i,-10} {string.Join(' ', states)}");
+                output.Add(string.Join(' ', states));
 
                 nodeIterator.Execute(n => n.PrepareState(matrix));
                 nodeIterator.Execute(n => n.UpdateState());
             }
-
+            
+            outputRenderer.Render(output);
             Console.WriteLine($"State Id: {systemStateId}");
 
             Console.WriteLine("\nDo you want to keep this system state? [y/n]");
